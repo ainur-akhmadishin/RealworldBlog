@@ -17,7 +17,7 @@ const Header = ({ userData, logout }) => {
       <Link to="/sign-in" className={classes['Header--link']}>
         Sign In
       </Link>
-      <Link to="/sign-up" className={classes['Header--link']}>
+      <Link to="/sign-up" className={classes['Header--sign-up']}>
         Sign Up
       </Link>
     </div>
@@ -30,11 +30,11 @@ const Header = ({ userData, logout }) => {
       <Link to="/new-article" className={classes['Header--create-article']}>
         Creacte article
       </Link>
-      <span> {userData.username} </span>
+      <span className={classes['Header--username']}> {userData.username} </span>
       <Link to="/profile">
         <img src={userLogo} className={classes['Header--user-logo']} alt="user" />
       </Link>
-      <Link to="/" className={classes['Header--link']} onClick={logout}>
+      <Link to="/" className={classes['Header--log-out']} onClick={logout}>
         Log Out
       </Link>
     </div>

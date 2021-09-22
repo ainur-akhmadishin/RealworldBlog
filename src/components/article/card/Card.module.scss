@@ -1,7 +1,7 @@
 .Card{
 	margin: 0 auto;
 	width: 941px;
-	height: 870px;
+	min-height: 870px;
 	background: #FFFFFF;
 		border-radius: 5px;
 	margin-top: 26px;
@@ -95,6 +95,7 @@
 	}
 	
 	&--body{
+		height: auto;
 		margin-top: 25px;
 	}
 	
@@ -136,6 +137,7 @@
 	&--img{
 		width: 46px;
 		height: 46px;
+		border-radius: 50%;
 	}
 	
 	&--btn-blog{

@@ -13,20 +13,20 @@
 	padding-top: 48px;
 
 	&--title {
-	
-		font-family: Roboto;
+
+		font-family:  "Roboto-Regular";
 		font-style: normal;
-		font-weight: 500;
+		font-weight: bold;
 		font-size: 20px;
 		line-height: 28px;
 		text-align: center;
 		color: #262626;
 	}
-	
-	&--have-account{
+
+	&--have-account {
 		text-align: center;
 		margin-top: 8px;
-		font-family: Roboto;
+		font-family:  "Roboto-Regular";
 		font-style: normal;
 		font-weight: normal;
 		font-size: 12px;
@@ -34,32 +34,32 @@
 		text-align: center;
 		color: #8C8C8C;
 	}
-	
-	&--input{
-				width: 320px;
-		}
-	
-	&--checkbox{
+
+	&--input {
+		width: 320px;
+	}
+
+	&--checkbox {
 		margin-top: 20px;
 	}
-	
-		&--label{
-			display: block;
-			margin-top: 20px;
-		}
 
-	
-	&--button{
-			display: block;
-			width: 319px;
-			height: 40px;
-			margin: 0 auto;
-			margin-top: 20px;
-			background: #1890FF;
-border-radius: 4px;
-		}
-	
-	&--block{
+	&--label {
+		display: block;
+		margin-top: 20px;
+	}
+
+
+	&--button {
+		display: block;
+		width: 319px;
+		height: 40px;
+		margin: 0 auto;
+		margin-top: 20px;
+		background: #1890FF;
+		border-radius: 4px;
+	}
+
+	&--block {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -68,30 +68,30 @@ border-radius: 4px;
 		display: block;
 		z-index: 10
 	}
-	
-		&--spinner{
-	 margin-left:50%;	
-	margin-top: 10%;
-	position: absolute;
-	z-index: 100		
-			
+
+	&--spinner {
+		left: 50%;
+		margin-top: 10%;
+		z-index: 100;
+		position: absolute;
+
 	}
 
 }
 
 
-	
-	.Form{
-		margin-left: 32px;
-		width: 320px;
-		
-		
-		&--error{
-			font-family: Roboto;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 14px;
-			line-height: 22px;
-			color: #F5222D;
-		}
+
+.Form {
+	margin-left: 32px;
+	width: 320px;
+
+
+	&--error {
+		font-family:  "Roboto-Regular";
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 22px;
+		color: #F5222D;
 	}
+}

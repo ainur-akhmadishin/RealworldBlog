@@ -1,11 +1,10 @@
-.Article{
+.Article {
 
-	
-			&--spinner{
-	 margin-left:50%;	
-	margin-top: 10%;
-	position: absolute;
-	z-index: 100		
-			
+
+	&--spinner {
+		left: 50%;
+		margin-top: 10%;
+		z-index: 100;
+		position: absolute;
 	}
 }

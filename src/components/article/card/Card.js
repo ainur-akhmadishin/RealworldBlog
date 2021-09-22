@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import ReactMarkdown from 'react-markdown';
 import { useHistory } from 'react-router-dom';
 import { Modal } from 'antd';
 import Utilits from '../../../servise/Utilits';
@@ -90,8 +91,7 @@ const Card = ({ article, userData }) => {
           {showBtns}
         </div>
       </div>
-
-      <div className={classes['Card--body']}>{body}</div>
+      <ReactMarkdown className={classes['Card--body']}>{body}</ReactMarkdown>
     </section>
   );
 };

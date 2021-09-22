@@ -11,6 +11,7 @@ import SignUp from '../signUp';
 import UserEdit from '../userEdit';
 import NewArticle from '../newArticle';
 import ArticleEdit from '../articleEdit';
+import PrivateRoute from '../private-route';
 import classes from './App.module.scss';
 
 const App = ({ getUser }) => {
@@ -27,12 +28,12 @@ const App = ({ getUser }) => {
       <Header />
       <div className={classes.App}>
         <Switch>
-          <Route path="/" exact component={ArticlesList} />
+          <Route path={['/', '/articles']} exact component={ArticlesList} />
           <Route path="/article/:slug" component={Article} />
           <Route path="/sign-in" component={SignIn} />
           <Route path="/sign-up" component={SignUp} />
           <Route path="/profile" component={UserEdit} />
-          <Route path="/new-article" component={NewArticle} />
+          <PrivateRoute path="/new-article" component={NewArticle} />
           <Route path="/articles/:slug/edit" component={ArticleEdit} />
           <Redirect to="/" />
         </Switch>

@@ -16,12 +16,12 @@ const Article = ({ singleArticle, getArticle, loading }) => {
 
   const { slug } = useParams();
 
-  const flag = Object.keys(singleArticle).length;
+  const isArticle = Object.keys(singleArticle).length;
 
   useEffect(() => getArticle(slug), [slug, getArticle]);
 
   const spinner = loading ? <Spin size="large" /> : null;
-  const content = !loading && flag ? <Card article={singleArticle.article} /> : null;
+  const content = !loading && isArticle && <Card article={singleArticle.article} />;
 
   return (
     <div>

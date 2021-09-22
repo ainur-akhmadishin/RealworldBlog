@@ -1,7 +1,7 @@
 import { LOADING } from './types';
 
 const initState = {
-  loading: true,
+  loading: false,
 };
 
 const loadingReduser = (state = initState, action) => {
